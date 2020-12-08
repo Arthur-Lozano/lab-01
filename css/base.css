@@ -1,0 +1,59 @@
+
+#a {
+  background-color:#12232E;
+}
+  #b{
+    background-color:#007CC7;
+  }
+  #c{
+    background-color:#4DA8DA;
+  }
+  #d{
+    background-color:#203647;  
+  }
+  #e{
+    background-color:#12232E;  
+  }
+  #f{
+    background-color:#4DA8DA;  
+  }
+  #g{
+    background-color:#007CC7;  
+  }
+  #h{
+    background-color:#12232E;  
+  }
+  #i{
+    background-color:#007CC7;  
+  }
+
+@media (min-width: 767px) {
+  #a {
+    background-color:#164A41;
+  }
+    #b{
+      background-color:#4D774E;
+    }
+    #c{
+      background-color:#9DC88D;
+    }
+    #d{
+      background-color:#F1B24A;  
+    }
+    #e{
+      background-color:#FFFFFF;  
+    }
+    #f{
+      background-color:#4D774E;  
+    }
+    #g{
+      background-color:#FFFFFF;  
+    }
+    #h{
+      background-color:#9DC88D;  
+    }
+    #i{
+      background-color:#9DC88D;  
+    }
+}
+  /* colors */
