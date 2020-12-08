@@ -1,0 +1,19 @@
+
+@media screen and (min-device-width: 480px) and (max-device-width: 767px) { 
+  header {
+    height: 125px;
+    line-height: 125px;
+  }
+  
+  section {
+  background-color: antiquewhite;
+  }
+  
+  div {
+    height: 300px;
+    margin: 1em auto;
+    width: 300px
+  }
+  
+}
+
