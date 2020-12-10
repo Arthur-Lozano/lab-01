@@ -1,7 +1,9 @@
-nav {
-  height: 20px;
-  width: 100%;
-  top: 0;
-  margin-bottom: 10px;
+.float-container:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+  margin: 0;
 }
 
