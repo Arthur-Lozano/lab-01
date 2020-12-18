@@ -1,100 +1,197 @@
 
- * {
-  box-sizing: border-box;
-}
- body {
-   /* height: 767px; */
-   width: 480px;
-   clear: both;
-   margin: 0;
+@media all and (max-width: 599px) {
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 240px 240px;
+  grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
 }
 
-div {
-  float: left;
-}
-
-#a {
-height:75px;
-width:480px;
-text-align: center;
-line-height: center;
-}
-#b{
-  height:150px;
-  width:480px; 
-  text-align: center;
-  line-height: center;
-}
-#c{
-  height:125px;
-  width:480px;  
-  text-align: center;
-  line-height: center;
-}
-#d{
-height:125px;
-width:480px;
-}
-#e, #g {
-  height:250px;
-  width:240px; 
-}
-
-#f, #h {
-  height:250px;
-  width:240px; 
-}
-#i{
-height:80px;
-width:480px;
-}
-
-/* Fixed the collapsing parent element or at least the footer */
-
-@media (min-width:768px) {
-  body {
-    clear: both;
-    margin: 0;
-    /* float: none; */
-    width: 960px;
- }
-
- div {
-   float:left;
- }
-  #a {
-    height:100px;
-    width:960px;
-    }
-    #b{
-      height:600px;
-      width:200px; 
-      /* margin: 0px 0px; */
-      /* float: left; Pushed B to the far left */
-    }
-    #c {
-      width: 380px;
-      height: 200px;
-      /* float: left; */
-      /* float:left; */
-    }
-  #d {
-    width: 380px;
-    height: 200px;
-    /* float:left; */
+  .itema {
+    grid-column-start: 1;
+    grid-column-end: 3;
+   grid-row-start:1;
+   grid-row-end: 2;
+   }
+   .itemb {
+    grid-column-start: 1;
+    grid-column-end: 3;
+     grid-row-start:2;
+     grid-row-end: 3; 
+   }
+   .itemc {
+    grid-column-start: 1;
+    grid-column-end: 3;
+     grid-row-start:3;
+     grid-row-end: 4; 
+   }
+   .itemd {
+    grid-column-start: 1;
+    grid-column-end: 3;
+     grid-row-start:4;
+     grid-row-end: 5; 
+   }
+   .iteme {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start:5;
+     grid-row-end: 6; 
+   }
+   .itemf{
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start:5;
+     grid-row-end: 6;
+   } 
+   .itemg {
+     /* grid-column-start: 4;
+     grid-column-end: 5; */
+     grid-row-start:6;
+     grid-row-end: 7;
+   } 
+   .itemh {
+     /* grid-column-start: 5;
+     grid-column-end: 6; */
+     grid-row-start:6;
+     grid-row-end: 7;
+   }
+   .itemi {
+    grid-column-start: 1;
+    grid-column-end: 3;
+   grid-row-start:7;
+   grid-row-end: 8;
+   }
   }
 
-    #e, #f, #g, #h {
-      height:250px;
-      width:190px;
+/* Medium screens */
+@media all and (min-width: 600px) and (max-width:799px) {
+  /* We tell both sidebars to share a row */
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+  }
+  
+    .itema {
+      grid-column-start: 1;
+      grid-column-end: 3;
+     grid-row-start:1;
+     grid-row-end: 2;
+     }
+     .itemb {
+      grid-column-start: 1;
+      grid-column-end: 3;
+       grid-row-start:2;
+       grid-row-end: 3; 
+     }
+     .itemc {
+      grid-column-start: 1;
+      grid-column-end: 3;
+       grid-row-start:3;
+       grid-row-end: 4; 
+     }
+     .itemd {
+      grid-column-start: 1;
+      grid-column-end: 3;
+       grid-row-start:4;
+       grid-row-end: 5; 
+     }
+     .iteme {
+       grid-column-start: 1;
+       grid-column-end: 2;
+       grid-row-start:5;
+       grid-row-end: 6; 
+     }
+     .itemf{
+       grid-column-start: 2;
+       grid-column-end: 3;
+       grid-row-start:5;
+       grid-row-end: 6;
+     } 
+     .itemg {
+       /* grid-column-start: 4;
+       grid-column-end: 5; */
+       grid-row-start:6;
+       grid-row-end: 7;
+     } 
+     .itemh {
+       /* grid-column-start: 5;
+       grid-column-end: 6; */
+       grid-row-start:6;
+       grid-row-end: 7;
+     }
+     .itemi {
+      grid-column-start: 1;
+      grid-column-end: 3;
+     grid-row-start:7;
+     grid-row-end: 8;
+     }
     }
+  
 
-    #i{
-    float: left;
-    height:150px;
-    width:760px;
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+   .grid-wrapper{
+   display: grid;
+   grid-template-columns: 200px 190px 190px 190px 190px;
+   grid-template-rows: 100px 200px 250px 150px ;
+   }
+
+   .itema {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start:1;
+    grid-row-end: 2;
+    }
+    .itemb {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start:2;
+      grid-row-end: 5; 
+    }
+    .itemc {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start:2;
+      grid-row-end: 3; 
+    }
+    .itemd {
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start:2;
+      grid-row-end: 3; 
+    }
+    .iteme {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start:3;
+      grid-row-end: 4; 
+    }
+    .itemf{
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start:3;
+      grid-row-end: 4;
+    } 
+    .itemg {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start:3;
+      grid-row-end: 4;
+    } 
+    .itemh {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start:3;
+      grid-row-end: 4;
+    }
+    .itemi {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start:4;
+    grid-row-end: 5;
     }
 }
-
-
-
