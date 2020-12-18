@@ -1,7 +1,7 @@
 
-#a {
+  #a {
   background-color:#12232E;
-}
+  }
   #b{
     background-color:#007CC7;
   }
@@ -26,8 +26,37 @@
   #i{
     background-color:#007CC7;  
   }
-
-@media (min-width: 767px) {
+  @media (min-width: 599px) {
+    #a {
+      background-color:#223d39;
+    }
+      #b{
+        background-color:#4DA8DA;
+      }
+      #c{
+        background-color:yellow;
+      }
+      #d{
+        background-color:blue;  
+      }
+      #e{
+        background-color:#203647;  
+      }
+      #f{
+        background-color:grey;  
+      }
+      #g{
+        background-color:greenyellow;  
+      }
+      #h{
+        background-color:#2d7e0f;  
+      }
+      #i{
+        background-color:#569440;  
+      }
+  }
+  
+@media (min-width: 799px) {
   #a {
     background-color:#164A41;
   }
