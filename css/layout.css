@@ -3,8 +3,8 @@
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 240px 240px;
-  grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+  grid-template-columns: 15em 15em;
+  grid-template-rows: 4.6875em 9.375em 7.8125em 7.8125em 15.625em 15.625em 5em;
 }
 
   .itema {
@@ -68,8 +68,8 @@
   /* We tell both sidebars to share a row */
   .grid-wrapper {
     display: grid;
-    grid-template-columns: 240px 240px;
-    grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+    grid-template-columns: 15em 15em;
+    grid-template-rows: 4.6875em 9.375em 7.8125em 7.8125em 15.625em 15.625em 5em;
   }
   
     .itema {
@@ -136,8 +136,8 @@
    */
    .grid-wrapper{
    display: grid;
-   grid-template-columns: 200px 190px 190px 190px 190px;
-   grid-template-rows: 100px 200px 250px 150px ;
+   grid-template-columns: 12.5em 11.875em 11.875em 11.875em 11.875em;
+   grid-template-rows: 6.25em 12.5em 15.625em 9.375em;
    }
 
    .itema {
